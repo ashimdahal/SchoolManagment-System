@@ -1,0 +1,46 @@
+html {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/04/26/54/87583a4d65b29f6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -120px; }
+
+.typewriter {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 45px;
+  margin-top: -200px;
+  border-right: 3px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #ff9800;
+  animation: twriter 3s steps(45) infinite;
+  position: relative;
+  top: 200px; }
+@keyframes twriter {
+  0% {
+    width: 0ch;
+    margin-left: 12%; }
+  100% {
+    width: 45ch;
+    margin-left: 12%; } }
+footer {
+  position: absolute;
+  bottom: 0px;
+  margin: 0;
+  padding: 0;
+  color: green; }
+  footer h6 {
+    animation: heart_beat 1s infinite;
+    text-align: center;
+    position: relative;
+    white-space: nowrap;
+    left: 155%;
+    font-family: roboto;
+    font-size: 20px; }
+@keyframes heart_beat {
+  20% {
+    text-shadow: 0px 0px 1px green; } }
+
+/*# sourceMappingURL=mainpage.css.map */
