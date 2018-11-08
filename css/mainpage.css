@@ -4,7 +4,31 @@ html {
   background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/04/26/54/87583a4d65b29f6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0px -120px; }
+  background-position: 0px -120px;
+}
+
+  .form{
+    float: right;
+
+    margin-top: 30%;
+  }
+
+  .form button{
+border-radius: 5px;
+      width: 120;
+      height: 30;
+      font-size: 18px;
+      background-color: #6a96dd;
+      border: none;
+      cursor: pointer;
+      font-family: Tahoma;
+
+  }
+
+  form button:hover{
+    background-color: #6fc45a;
+  }
+
 
 .typewriter {
   text-align: center;
@@ -43,4 +67,54 @@ footer {
   20% {
     text-shadow: 0px 0px 1px green; } }
 
+h1{
+  text-align: center;
+  font-size: 46px;
+}
+.gallery-container{
+  width: 80%;
+  height: 500px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:center;
+  align-items: flex-start;
+
+
+}
+.gallery-container a .teacher{
+  margin-top: 20px;
+  width: 245px;
+  height: 240px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-basis: 40%;
+  background:transparent;
+  margin-right: 4px;
+    border-radius: 6px;
+    border: 2px solid black;
+}
+.gallery-container a .student{
+  margin-top: 20px;
+  width: 230px;
+  height: 240px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-basis: 40%;
+  background:transparent;
+    border-radius: 6px;
+    border: 2px solid black;
+}
+a{
+  text-decoration: none;
+  color: black;
+
+}
+a:hover{
+  opacity: 0.8;
+}
 /*# sourceMappingURL=mainpage.css.map */
