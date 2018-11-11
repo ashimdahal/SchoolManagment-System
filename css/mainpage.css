@@ -1,4 +1,101 @@
-html {
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*hamro codes*/
+
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+html{
   margin: 0;
   padding: 0;
   background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/04/26/54/87583a4d65b29f6.jpg");
@@ -50,11 +147,11 @@ border-radius: 5px;
     width: 45ch;
     margin-left: 12%; } }
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   margin: 0;
   padding: 0;
-  color: green; }
+  color: black; }
   footer h6 {
     animation: heart_beat 1s infinite;
     text-align: center;
@@ -109,12 +206,277 @@ h1{
     border-radius: 6px;
     border: 2px solid black;
 }
-a{
+.gallery-container a{
+  font-size: 22px;
   text-decoration: none;
   color: black;
 
 }
-a:hover{
+.gallery-container a:hover{
   opacity: 0.8;
+}
+.body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url(bg.jpg) no-repeat;
+  background-size: cover;
+}
+.login-box{
+  width: 280px;
+  position: absolute;
+    top: 50%;
+  left: 50%;
+
+color: black;
+  transform: translate(-50%, -50%);
+}
+.login-box h1{
+width: 100px;
+  font-size: 40px;
+  border-bottom: 6px solid #32af0c;
+  margin-bottom: 50px;
+  padding: 13px 0;
+}
+.textbox{
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #32af0c;
+
+}
+
+.textbox i{
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+
+.textbox input{
+  border: none;
+  outline: none;
+  background: none;
+  color: whiye;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+.btn{
+  width: 100%;
+  background-blend-mode: hard-light;
+
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  height: 40px;
+  font-size: 18px;
+  margin: 12px 0;
+}
+
+.btn:hover{
+background-color:aquamarine;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+.signup-form{
+  width:400px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.main-container{
+  height: 100%;
+
+  text-align: center;
+  margin: 0 auto;
+
+}
+.main-container h2{
+  font-family:inherit;
+  color: #111;
+    text-align: center;
+
+      font-family: inherit;
+      font-size: 25px;
+
+      line-height: 30px;
+
+}
+.signup-form input{
+  border:none;
+  border-bottom: 2px solid black;
+  margin:6px auto;
+  width: 100%;
+  height: 40px;
+  background-color: #F9FFFC;
+  font-family: cursive;
+  font-size: 18px;
+  text-align:justify;
+  line-height: 40px;
+  outline: none;
+}
+
+.signup-form input:focus{
+background-color: #FEFFDB;
+  border-bottom: 2px solid #E23841;
+
+}
+
+.signup-form button{
+font-family: cursive;
+font-size: 18px;
+  background-color: #E23841;
+  border:none;
+  border-radius: 8px;
+  width:90px;
+
+  height: 45px;
+  cursor: pointer;
+width: 100%;
+}
+
+.signup-form button:hover{
+
+font-size: 20px;
+  background-color: #03D600;
+
+}
+p{
+  font-size: 25px;
+}
+.logg{
+  width: 120px;
+  height: 45px;
+  float: right;
+}
+.con{
+  float: right;
+  margin-right: 3px;
+  margin-top: 19px;
+}
+.con a{
+  font-size: 21.3px;
+  color: black;
+}
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+.loggg{
+  width: 100%;
+  background-blend-mode: hard-light;
+  border: none;
+  border-radius: 6px;
+  height: 32px;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 19px;
+}
+.texttitle{
+  font-family: roboto;
+  text-align: center;
+  font-size: 40px;
+}
+.mid{
+
+  background-color: rebeccapurple;
+  background-attachment: fixed;
+  background-size: cover;
+}
+a:hover .rounded{
+  opacity: 0.3;
+}
+.texts{
+  text-align: center;
+  text-decoration: none;
+  opacity: 0.6;
+}
+a:hover .texts{
+  opacity: 1;
+  text-decoration:none;
+  color: black;
+}
+.Comment {
+    width:689px;
+    height:66px;
+
+    color:black;
+    margin:0 auto;
+}
+#notice{
+  width: 897;
+  height: 102;
+  resize: none;
+  font-size: 19.6px;
+}
+#publish{
+  border: none;
+  border-radius: 8px;
+  margin-top: 5px;
+  font-family: roboto;
+  width: 32%;
+  height: 33px;
+  font-size: 25px;
+  cursor: pointer;
+  float: left;
+}
+.dates{
+  text-align: left;
+}
+.naau{
+  text-transform:uppercase;
+  font-family: roboto;
+}
+.notice{
+  text-align: center;
+  font-size: 19.56px;
+}
+.delete_form{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: red;
+}
+.delete_form button{
+  width: 60px;
+  height: 26.98px;
+  cursor: pointer;
+  opacity: 0.7;
+  border: none;
+  color: red;
+}
+.delete_form button:hover{
+  opacity: 1;
 }
 /*# sourceMappingURL=mainpage.css.map */

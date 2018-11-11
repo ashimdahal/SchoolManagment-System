@@ -1,4 +1,4 @@
-html{
+body{
   margin: 0;
   padding: 0;
   background-image:url('https://png.pngtree.com/thumb_back/fw800/back_pic/04/26/54/87583a4d65b29f6.jpg');
@@ -33,7 +33,7 @@ top:200px;
 
 }
 footer{
-  position: absolute;
+  position: fixed;
   bottom:0px;
   margin:0;
   padding:0;

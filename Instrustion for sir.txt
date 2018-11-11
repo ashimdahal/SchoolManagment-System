@@ -1,0 +1,14 @@
+follow the steps:
+1.  open phpmyadmin and create database name "school"
+2. go to sql tab on the school database and insert the codes from "school.sql"
+3. now database is ready... 
+note:
+The backend lies in the principal's accounts.\
+which has following details
+
+
+username: principal12
+password: new123
+
+this opens  the backend and ability to register new teachers
+for the front end login as a student by registering ..
