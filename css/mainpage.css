@@ -102,6 +102,7 @@ html{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -120px;
+  background-attachment: fixed;
 }
 
   .form{
@@ -171,20 +172,18 @@ h1{
 .gallery-container{
   width: 80%;
   height: 500px;
-
   margin: 0 auto;
-
   display: flex;
   flex-flow: row wrap;
-  justify-content:center;
+  justify-content: space-between;
   align-items: flex-start;
-
+  align-content: space-between;
 
 }
 .gallery-container a .teacher{
   margin-top: 20px;
-  width: 245px;
-  height: 240px;
+  width: 520px;
+  height: 450px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -196,8 +195,8 @@ h1{
 }
 .gallery-container a .student{
   margin-top: 20px;
-  width: 230px;
-  height: 240px;
+  width: 520px;
+  height: 450px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -349,7 +348,7 @@ font-size: 20px;
 
 }
 p{
-  font-size: 25px;
+  font-size: 45px;
 }
 .logg{
   width: 120px;
@@ -410,7 +409,7 @@ p{
 }
 .mid{
 
-  background-color: rebeccapurple;
+  background-image: url(https://i2.wp.com/www.currencytimes.co.in/wp-content/uploads/2018/03/professional-website-background-images-hd-8.jpg?fit=1920%2C1080&ssl=1);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -478,5 +477,59 @@ a:hover .texts{
 }
 .delete_form button:hover{
   opacity: 1;
+}
+.uploadvid{
+  text-align: center;
+  color: black;
+  background-color: #ccc;
+  margin-left: 415;
+  margin-right: 95px;
+  margin-top: 25px;
+  margin-bottom: 8px;
+  border-radius: 23px;
+}
+.uploadvid input{
+  width: 100%;
+margin: 2px auto;
+  height: 32.36px;
+  outline: none;
+}
+.uploadvid button{
+  margin-bottom: 2px;
+  width: 100;
+  background-color:burlywood;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  height: 38;
+  cursor: pointer;
+}
+h2{
+text-align: center;
+color: black;
+font-size: 26px;
+}
+h3{
+  text-align: center;
+  color: black;
+}
+h4{
+  color: black;
+}
+.videobtn{
+  background-color: #bbcec3;
+  border:none;
+  border-radius: 12px;
+  width: 105;
+  height: 30;
+  font-size: 22px;
+  outline: none;
+}
+.Holder{
+  margin: 0;
+padding: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
 }
 /*# sourceMappingURL=mainpage.css.map */

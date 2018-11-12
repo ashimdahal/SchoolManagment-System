@@ -36,7 +36,7 @@ if (isset($_SESSION['uid'])) {
         while ($row= mysqli_fetch_assoc($result)) {
           echo '<div style="border:1px solid black;position:relative;">
           <div class="p-2 bd-highlight"><p class = "dates">'.$row['insert_date'].'</p></div>
-          <div class="p-2 bd-highlight"><p class = "naau">'.$row['user'].'</p></div>
+          <div class="p-2 bd-highlight"><p class = "naau">Notice Issued By  : '.$row['user'].'</p></div>
           <div class="p-2 bd-highlight"><p class = "notice">'.$row['notice'].'</p></div>
           <p>
           <form class = "delete_form" action="../includes/delete.php" method="POST">

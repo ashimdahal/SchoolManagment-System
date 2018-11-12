@@ -4,7 +4,7 @@ include 'fonts.php';
  ?>
   <body>
 
-      <h1>select the user<h1>
+      <h1>Select the user<h1>
 
         <!-- flexbox-->
 
@@ -14,12 +14,12 @@ include 'fonts.php';
 
   <a href="teachlogin.php">
   <div class="teacher">
-<i class="fas fa-chalkboard-teacher fa-8x"></i><br><p>Teacher</p>
+<i class="fas fa-chalkboard-teacher fa-8x" style="font-size:350px;"></i><br><br><p>Teacher</p>
   </div>
   </a>
   <a href="stdlogin.php">
   <div class="student">
-<i class="fas fa-user-graduate fa-8x"></i><br><p>Student/Parent </p>
+<i class="fas fa-user-graduate fa-8x" style="font-size:350px;"></i><br><br><p>Student/Parent </p>
   </div>
   </a>
 </div>
