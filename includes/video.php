@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     $videodesc = $_POST['desc'];
     $uploader = $_POST['user'];
     $recommended = $_POST['class'];
-
+$videoorder=1;
     $video = $_FILES['file'];
 
     $videoname = $video['name'];
@@ -43,9 +43,9 @@ if (empty($videotitle) || empty($videodesc) || empty($recommended)) {
     mysqli_stmt_execute($stmt);
     $result =  mysqli_stmt_get_result($stmt);
     $resultcheck = mysqli_num_rows($result);
-    $videoorder = $resultcheck+1;
 
-    $sql= "INSERT INTO videolect(videotitle,description,videofullname,ordervideo,recommended,uploadedby) VALUES (?,?,?,?,?,?) ";
+
+    $sql= "INSERT INTO videolect(videotitle,description,videofullname,ordervideo,recommended,uploadedby) VALUES (?,?,?,?,?,?);";
     if (!mysqli_stmt_prepare($stmt,$sql)) {
       header('Location:../inside/lect.php?upload=sqlfails');
       exit();

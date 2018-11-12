@@ -1,8 +1,8 @@
-<div class="d-flex justify-content-around" style="margin-left:250;">
+<div class="gallery-container" style="margin-left:250;">
 <?php
 include_once '../includes/dbcon.php';
 
-        $sql= 'SELECT * FROM videolect ORDER BY ordervideo DESC;';
+        $sql= 'SELECT * FROM videolect ORDER BY videoid DESC;';
         $stmt = mysqli_stmt_init($conn);
         if (!mysqli_stmt_prepare($stmt,$sql)) {
        // code...
@@ -13,7 +13,7 @@ include_once '../includes/dbcon.php';
        while ($row = mysqli_fetch_assoc($result)) {
          echo ' <div style="margin:5px">
 
-<video width="400" controls>
+<video width="400" height="400" controls  preload="metadata">
  <source src="../uploads/video/'.$row['videofullname'].'" type="video/mp4">
 
  Your browser does not support HTML5 video.

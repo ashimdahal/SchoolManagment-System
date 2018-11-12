@@ -532,4 +532,39 @@ font-size: 100%;
 vertical-align: baseline;
 background: transparent;
 }
+.uploadpic{
+  text-align: center;
+  color: black;
+  background-color: #ccc;
+  margin-left: 415;
+  margin-right: 95px;
+  margin-top: 25px;
+  margin-bottom: 8px;
+  border-radius: 23px;
+}
+.uploadpic input{
+  width: 100%;
+margin: 2px auto;
+  height: 32.36px;
+  outline: none;
+}
+.uploadpic button{
+  margin-bottom: 2px;
+  width: 100;
+  background-color:burlywood;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  height: 38;
+  cursor: pointer;
+}
+#deletepic{
+background: transparent;
+border: none;
+color: red;
+}
+#deletepic:hover{
+background-color: red;
+color: green;
+}
 /*# sourceMappingURL=mainpage.css.map */

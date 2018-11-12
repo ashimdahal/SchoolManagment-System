@@ -15,6 +15,22 @@ include 'inheader.php';
 }
 include '../footer.php';
  ?>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"/>
+<div class="mid">
+
+   <p class="texttitle">Memorable Moments</p>
+   <?php
+if (isset($_SESSION['uid'])) {
+  include 'galleryform.php';
+}
+
+include 'gallerypics.php';
+    ?>
 
 
- <p class="texttitle">Memorable Moments</p>
+
+
+
+
+   </div>
+</div>
